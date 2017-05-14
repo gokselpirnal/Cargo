@@ -14,7 +14,7 @@ Communication between fragments and activities
 
 
 ```java
-// paste to Activity or Fragment
+// paste to receiver Activity or Fragment
 
 @Address
 public void clickedToButton(ButtonClicked pkg){
@@ -46,4 +46,7 @@ public void onStop() {
 
 Cargo.deliver(new ButtonClicked());
 Cargo.deliver(new ImageClicked());
+
+// deliver method's parameter is a pojo
+
 ```
